@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls-cont">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>          
+        </div>
+        <div class="volume-cont">
+          <img src="assets/svg/button-volume.svg" width="20px" alt="button-volume" class="button-volume">
+          <input type="range"  min="0" max="100" step="1" class="audio-volume">
+        </div>
+        <div class="duration-cont">
+          <p class="duration-title"></p>
+          <input type="range" value="0"  min="0" max="100" step="1" class="audio-duration">
+          <p class="duration-time" ><span class="current-time"></span><span class="audio-time"></span></p>
+        </div>
+        
+      </div>
+      <ul class="play-list"></ul>
+      
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" >
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="lang"><button class="lang-ru ru lang-active" disabled>RU</button><button class="lang-eng eng">ENG</button></div>
+    <div class="footer-info">
+      <div><p>© 2021</p></div>
+      <div class="RSS"><a href="https://rs.school/" target="_blank"><img src="assets/svg/rs_school_js.svg" alt="RSscholl" height="20px"> The Rolling Scopes School</a></div>
+      <div><p><a href="https://github.com/Zhdmitry" target="_blank">ZhDmitry</a></p></div>
+      
+  </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
